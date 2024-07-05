@@ -18,7 +18,7 @@ def motion_detected():
         
     except Exception as e:
         print(f"Error processing request: {e}")
-        return jsonify({"status": "error", "message": str(e)}), 400
+        return jsonify({"status": "error", "message": str(e)}), 412
 
 if __name__ == '__main__':
     print("executando...")
